@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ec44198-8158-45ce-8594-c89277a1c676" name="Default Changelist" comment="" />
+    <list default="true" id="2ec44198-8158-45ce-8594-c89277a1c676" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facial-Recognition/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facial-Recognition/.idea/Facial-Recognition.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facial-Recognition/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facial-Recognition/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facial-Recognition/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facial-Recognition/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facial-Recognition/Facial_Recognition_Part1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facial-Recognition/Facial_Recognition_Part2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facial-Recognition/Facial_Recognition_Part3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gas_data_collect/capstone/GAS_DATASET.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Gas_data_collect/capstone/GAS_DATASET.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gas_data_collect/capstone/isolation_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gas_data_collect/capstone/isolation_forest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_GUI/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_GUI/GUI.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aqJA6qfmiUqRFyEkPs0muAgj3Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,10 +41,33 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.GUI (1)">
+    <configuration name="GUI (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_openCV" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_GUI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/User_GUI/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_openCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -33,7 +75,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\salmon123\Anaconda3\envs\tensorflow\python.exe" />
+      <option name="SDK_HOME" value="D:\Programs\Anaconda3\envs\tensorflow\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -48,8 +90,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.GUI" />
+      <item itemvalue="Python.GUI (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GUI (1)" />
         <item itemvalue="Python.GUI" />
       </list>
     </recent_temporary>
@@ -65,6 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587457044015</updated>
       <workItem from="1587457045951" duration="1583000" />
+      <workItem from="1590576332895" duration="5190000" />
     </task>
     <servers />
   </component>
@@ -76,28 +124,47 @@
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
     <state x="-1085" y="123" key="#GUI/-1680.0.1680.1010/0.0.1280.984@-1680.0.1680.1010" timestamp="1587457228373" />
-    <state width="1220" height="256" key="GridCell.Tab.0.bottom" timestamp="1587458630251">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590576467591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590576467591" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590576456559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590576456559" />
+    <state width="914" height="371" key="GridCell.Tab.0.bottom" timestamp="1590585256589">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="256" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.1280.984@-1680.0.1680.1010" timestamp="1587458630251" />
-    <state width="1220" height="256" key="GridCell.Tab.0.center" timestamp="1587458630251">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="914" height="371" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590585256589" />
+    <state width="914" height="371" key="GridCell.Tab.0.center" timestamp="1590585256589">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="256" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.1280.984@-1680.0.1680.1010" timestamp="1587458630251" />
-    <state width="1220" height="256" key="GridCell.Tab.0.left" timestamp="1587458630251">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="914" height="371" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590585256589" />
+    <state width="914" height="371" key="GridCell.Tab.0.left" timestamp="1590585256589">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="256" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.1280.984@-1680.0.1680.1010" timestamp="1587458630251" />
-    <state width="1220" height="256" key="GridCell.Tab.0.right" timestamp="1587458630251">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="914" height="371" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590585256589" />
+    <state width="914" height="371" key="GridCell.Tab.0.right" timestamp="1590585256589">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1220" height="256" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.1280.984@-1680.0.1680.1010" timestamp="1587458630251" />
-    <state x="-1300" y="153" key="SettingsEditor" timestamp="1587457291193">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="914" height="371" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590585256589" />
+    <state x="434" y="158" key="SettingsEditor" timestamp="1590576445500">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1300" y="153" key="SettingsEditor/-1680.0.1680.1010/0.0.1280.984@-1680.0.1680.1010" timestamp="1587457291193" />
+    <state x="434" y="158" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590576445500" />
+    <state x="869" y="75" width="730" height="754" key="dock-window-1" timestamp="1590585253727">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="869" y="75" width="730" height="754" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1590585253727" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_openCV$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1587457900558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FullCover$GUI__1_.coverage" NAME="GUI (1) Coverage Results" MODIFIED="1590582292335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_GUI" />
+    <SUITE FILE_PATH="coverage/FullCover$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1590577091880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
