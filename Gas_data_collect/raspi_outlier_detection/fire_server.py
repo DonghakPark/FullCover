@@ -1,6 +1,6 @@
 import sys
 from socket import *
-from gasLeakage import *
+from capstone.gasLeakage import *
 
 
 def main():
