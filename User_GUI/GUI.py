@@ -1,30 +1,39 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QListView
-from PyQt5.QtGui import QIcon
+import urllib.request
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5 import uic
 
-class MyApp(QWidget):
+#UI파일 연결
+#단, UI파일은 Python 코드 파일과 같은 디렉토리에 위치해야한다.
+form_class = uic.loadUiType("pushbuttonTest.ui")[0]
 
-    def __init__(self):
+#화면을 띄우는데 사용되는 Class 선언
+class WindowClass(QMainWindow, form_class) :
+    def __init__(self) :
         super().__init__()
-        self.initUI()
+        self.setupUi(self)
 
-    def initUI(self):
+        #버튼에 기능을 연결하는 코드
+        self.btn_1.clicked.connect(self.button1Function)
 
-        btn1 = QPushButton('차량 번호 등록', self)
-        btn1.setGeometry(30, 100, 180, 60)
+        self.btn_2.clicked.connect(self.button2Function)
 
-        btn2 = QPushButton("차량 인식", self)
-        btn2.setGeometry(30, 200, 180, 60)
+    #btn_1이 눌리면 작동할 함수
+    def button1Function(self) :
+        print("btn_1 Clicked")
 
-        Carnum = QListView(self)
-        self.setWindowTitle("Car_Number_recognizer")
-        self.setWindowIcon(QIcon('./dku_logo.png'))
-        self.setGeometry(300,300,1000,600)
-        self.show()
+    #btn_2가 눌리면 작동할 함수
+    def button2Function(self) :
+        self.qPixmapFileVar = QPixmap()
+        self.qPixmapFileVar.load("창모.jpg")
+        self.qPixmapFileVar = self.qPixmapFileVar.scaledToWidth(150)
+        self.lbl_picture.setPixmap(self.qPixmapFileVar)
 
 
-
-if __name__ == "__main__":
+if __name__ == "__main__" :
     app = QApplication(sys.argv)
-    ex = MyApp()
-    sys.exit(app.exec_())
+    myWindow = WindowClass()
+    myWindow.show()
+    app.exec_()
