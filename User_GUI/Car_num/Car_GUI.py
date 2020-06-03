@@ -1,9 +1,18 @@
-import cv2
 import sys
+import urllib.request
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5 import uic
+import numpy as np
+import cv2
 from PyQt5 import QtCore
 from PyQt5 import QtWidgets
 from PyQt5 import QtGui
 
+#UI파일 연결
+#단, UI파일은 Python 코드 파일과 같은 디렉토리에 위치해야한다.
+form_class = uic.loadUiType("pushbuttonTest.ui")[0]
 
 class ShowVideo(QtCore.QObject):
 
@@ -64,32 +73,34 @@ class ImageViewer(QtWidgets.QWidget):
             self.setFixedSize(image.size())
         self.update()
 
+#화면을 띄우는데 사용되는 Class 선언
+class WindowClass(QMainWindow, form_class) :
+    def __init__(self) :
+        super().__init__()
+        self.setupUi(self)
 
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
+        #버튼에 기능을 연결하는 코드
+        self.btn_1.clicked.connect(self.button1Function)
 
-    thread = QtCore.QThread()
-    thread.start()
-    vid = ShowVideo()
-    vid.moveToThread(thread)
+        self.btn_2.clicked.connect(self.button2Function)
 
-    image_viewer1 = ImageViewer()
+    #btn_1이 눌리면 작동할 함수
+    def button1Function(self) :
+        print("btn_1 Clicked")
 
-    vid.VideoSignal1.connect(image_viewer1.setImage)
+    #btn_2가 눌리면 작동할 함수
+    def button2Function(self) :
 
-    push_button1 = QtWidgets.QPushButton('Start')
-    push_button1.clicked.connect(vid.startVideo)
 
-    vertical_layout = QtWidgets.QVBoxLayout()
-    horizontal_layout = QtWidgets.QHBoxLayout()
-    horizontal_layout.addWidget(image_viewer1)
-    vertical_layout.addLayout(horizontal_layout)
-    vertical_layout.addWidget(push_button1)
+        # self.qPixmapFileVar = QPixmap()
+        # self.qPixmapFileVar.load("증명.png")
+        # self.qPixmapFileVar = self.qPixmapFileVar.scaledToWidth(150)
+        # self.lbl_picture.setPixmap(self.qPixmapFileVar)
 
-    layout_widget = QtWidgets.QWidget()
-    layout_widget.setLayout(vertical_layout)
 
-    main_window = QtWidgets.QMainWindow()
-    main_window.setCentralWidget(layout_widget)
-    main_window.show()
-    sys.exit(app.exec_())
+if __name__ == "__main__" :
+    app = QApplication(sys.argv)
+
+    myWindow = WindowClass()
+    myWindow.show()
+    app.exec_()
