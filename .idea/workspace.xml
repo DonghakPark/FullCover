@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/Facial-Recognition/Facial_Recognition_Part1.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Facial-Recognition/Facial_Recognition_Part2.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Facial-Recognition/Facial_Recognition_Part3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User_GUI/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_GUI/GUI.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Facial-Recognition" />
   </component>
+  <component name="JupyterTrust" id="f865122e-8f95-4ec2-9064-7c081a7f91d4" />
   <component name="ProjectId" id="1aqJA6qfmiUqRFyEkPs0muAgj3Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -179,6 +179,7 @@
       <workItem from="1590585995950" duration="781000" />
       <workItem from="1591111197555" duration="66000" />
       <workItem from="1591176061873" duration="1870000" />
+      <workItem from="1591709763296" duration="513000" />
     </task>
     <servers />
   </component>

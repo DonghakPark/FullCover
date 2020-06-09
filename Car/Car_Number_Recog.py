@@ -1,49 +1,8 @@
-import sys
-import urllib.request
 import cv2
-import time
-import numpy as np
-import threading
-import pytesseract
 import matplotlib.pyplot as plt
-from concurrent.futures import ThreadPoolExecutor
-import PIL
+import numpy as np
+import pytesseract
 
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5 import uic
-
-
-#UI파일 연결
-#단, UI파일은 Python 코드 파일과 같은 디렉토리에 위치해야한다.
-form_class = uic.loadUiType("pushbuttonTest.ui")[0]
-
-def start():
-
-    camera = cv2.VideoCapture(0)
-    count = 0
-
-    while True:
-        (grabbed, frame) = camera.read()
-        count += 1
-        if not grabbed:
-            break
-
-        cv2.imshow("Tracking", frame)
-        time.sleep(0.025)
-
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            break
-        print(count)
-        if count == 100:
-            cv2.imwrite('temp.jpg', frame)
-            break
-    camera.release()
-    cv2.destroyAllWindows()
-    result = Recog()
-    print("여기는 알파 :"+result)
-    return result
 
 def Recog():
     tesseract_path = 'C:/Program Files (x86)/Tesseract-OCR'
@@ -325,52 +284,4 @@ def Recog():
             #     print("Open door")
 
             cv2.imwrite("result.jpg",img_out)
-
-            print("여기는 델타 :" + chars)
             return chars
-
-#################################################
-
-#화면을 띄우는데 사용되는 Class 선언
-class WindowClass(QMainWindow, form_class) :
-    def __init__(self) :
-        super().__init__()
-        self.setupUi(self)
-
-        #버튼에 기능을 연결하는 코드
-        self.btn_1.clicked.connect(self.button1Function)
-        self.btn_2.clicked.connect(self.button2Function)
-
-    #btn_1이 눌리면 작동할 함수
-    def button1Function(self) :
-
-
-        # 사용자 정보 등록
-
-        print("btn_1 Clicked")
-
-    #btn_2가 눌리면 작동할 함수
-    def button2Function(self):
-
-        # t_executor = ThreadPoolExecutor(1)
-        # t = t_executor.submit(start)
-        #
-        # show = ""
-        # while True:
-        #     if t.done():
-        #         print("Recognition complete")
-        #         show =t.result()
-        #
-        #         break
-        self.qPixmapFileVar = QPixmap()
-        self.qPixmapFileVar.load("temp.jpg")
-        self.qPixmapFileVar = self.qPixmapFileVar.scaledToWidth(200)
-        self.lbl_picture.setPixmap(self.qPixmapFileVar)
-        self.lbl2_picture.setText("t.result()")
-
-
-if __name__ == "__main__" :
-    app = QApplication(sys.argv)
-    myWindow = WindowClass()
-    myWindow.show()
-    app.exec_()
