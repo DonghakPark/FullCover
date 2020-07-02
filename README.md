@@ -16,7 +16,21 @@ Capstone Design Project in Dankook Univ. __(Smart Residential Environment Servic
 > Dankook Univ. software Dept. <br>
 > Team : 박동학, 방승환, 홍승기, 김승준 <br>
 
-#2020-05-01
-starting GUI Programming 
+# Diagram
+![dia](./image/diagram.png)
 
+# car_number_recognition
+![dia](./image/1.png)
+![dia](./image/1-1.png)
+![dia](./image/6.png)
+
+# Face_recogniation
+![dia](./image/2.png)
+![dia](./image/1-2.png)
+![dia](./image/5.png)
+
+#anomally detection
+![dia](./image/3.png)
+![dia](./image/1-3.png)
+![dia](./image/7.png)
 
