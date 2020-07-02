@@ -17,7 +17,7 @@ Capstone Design Project in Dankook Univ. __(Smart Residential Environment Servic
 > Team : 박동학, 방승환, 홍승기, 김승준 <br>
 
 # Diagram
-![dia](./image/diagram.png)
+![dia](./image/diagram.png){: width="100%" height="100%"}
 
 # car_number_recognition
 ![dia](./image/1.png)
@@ -33,7 +33,7 @@ Capstone Design Project in Dankook Univ. __(Smart Residential Environment Servic
 #
 ![dia](./image/5.png)
 
-#anomally detection
+# anomally detection
 ![dia](./image/3.png)
 #
 ![dia](./image/1-3.png)
