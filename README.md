@@ -21,16 +21,22 @@ Capstone Design Project in Dankook Univ. __(Smart Residential Environment Servic
 
 # car_number_recognition
 ![dia](./image/1.png)
+# 
 ![dia](./image/1-1.png)
+#
 ![dia](./image/6.png)
 
 # Face_recogniation
 ![dia](./image/2.png)
+#
 ![dia](./image/1-2.png)
+#
 ![dia](./image/5.png)
 
 #anomally detection
 ![dia](./image/3.png)
+#
 ![dia](./image/1-3.png)
+#
 ![dia](./image/7.png)
-
+#
